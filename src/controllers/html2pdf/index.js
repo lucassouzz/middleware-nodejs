@@ -3,7 +3,7 @@ const path = require('path');
 
 exports.buildBase64 = (dataHeader, html) => {
     
-    let thProcuradoria ="<th style='font-family: Arial, Helvetica, sans-serif; text-align: left;'>Procuradoria<br> de Atenção à Saúde</th>"                                                                                                                 
+    let thProcuradoria ="<th style='font-family: Arial, Helvetica, sans-serif; text-align: left;'>Lucas<br> de Souza</th>"                                                                                                                 
     let thImage = "<th><img src='data:image/" + dataHeader.sufix + ";base64," + dataHeader.base64image + "' alt='Logo PGM' style='display: none; width:351px; height:71px;'/></th>"
     
     html = thImage + html
