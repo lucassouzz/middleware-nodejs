@@ -14,5 +14,5 @@ e em seguida é realizado a leitura das imagens geradas com python e tesseract p
 ## Converter string com tags html em documento PDF.
 Apartir de texto com tags html e atributos css o serviço node interpreta o mesmo utilizando a biblioteca <a href='https://github.com/marcbachmann/node-html-pdf'>html-pdf</a>
 e retorna um documento PDF com cabeçalho e respeitando o estilo das tags html e propriedades do css.
-
-![image](https://user-images.githubusercontent.com/53841323/175153648-ec2f852c-c6bf-4f5b-b72c-2739b7e4308b.png)
+### Exemplo de requisição:
+![image](https://user-images.githubusercontent.com/53841323/175162996-fe7cfd70-ba42-4636-b5ec-afe01a05b8bd.png)
