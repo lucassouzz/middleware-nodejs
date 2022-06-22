@@ -1,0 +1,33 @@
+const html2pdf = require('html-pdf')
+
+exports.buildBase64 = (html) => {
+    //TODO: tratativa de erro!
+    const options = {
+        type: 'pdf',
+        format: 'A4',
+        orientation: 'portrait'
+    }
+    return new Promise(result => {
+
+        let goBack = {};
+
+        try {
+            html2pdf.create(html, options).toBuffer((err, buffer) => {
+                var b64 = Buffer.from(buffer).toString('base64');
+
+                goBack.success = true;
+                goBack.base64 = b64;
+
+                result(goBack);
+            })
+        } catch (error) {
+            console.log(error)
+
+            goBack.success = false;
+            goBack.error = error;
+
+            result(goBack);
+        }
+
+    })
+}
